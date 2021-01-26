@@ -134,7 +134,7 @@ def pat(update: Update, context: CallbackContext):
 
 @run_async
 def roll(update: Update, context: CallbackContext):
-    update.message.reply_text(random.choice(range(1, 13)))
+    update.message.reply_text(random.choice(range(1, 12)))
 
 
 @run_async
