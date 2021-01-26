@@ -26,12 +26,12 @@ GIFS = [
     'CgACAgUAAx0CU_rCTAABAjdSX1s3fq5iEJ64YeQLKI8cD7CSuSEAAlUBAAJu09hW5iqWB0hTPD4bBA'
 ]
 
-SLAP_SAITAMA_TEMPLATES = (
+SLAP_ROMEO_TEMPLATES = (
     "Slap me one more time and I'll mute you.",
     "Stop slapping me. REEEEEEEEEEEEEE.",
     [
-        "I am muting you for a minute.",  # normal reply
-        "Stop slapping me just because I can't mute you. REEEEEEEEEE.",  # reply to admin
+        "I am muting you for a minute.😆😆",  # normal reply
+        "Stop slapping me, just because, I can't mute you.😥🥴 REEEEEEEEEE.😥🥴",  # reply to admin
         "tmute",  # command
         "Shut up!",
         "Silence!"
