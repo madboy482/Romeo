@@ -74,7 +74,7 @@ def remove_chat(update: Update, context: CallbackContext):
 
 def check_message(context: CallbackContext, message):
     reply_msg = message.reply_to_message
-    if message.text.lower() == "saitama":
+    if message.text.lower() == "romeo":
         return True
     if reply_msg:
         if reply_msg.from_user.id == context.bot.get_me().id:
@@ -143,7 +143,7 @@ Chatbot utilizes the CoffeeHouse API and allows Saitama to talk and provides a m
  • `/addchat`*:* Enables Chatbot mode in the chat.
  • `/rmchat`*:* Disables Chatbot mode in the chat.
 
-Reports bugs at @{SUPPORT_CHAT}
+Reports bugs at @Romeo_JulietBotSupport
 *Powered by CoffeeHouse* (https://coffeehouse.intellivoid.net/) from @Intellivoid
 """
 
