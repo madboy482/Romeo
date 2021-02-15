@@ -6,7 +6,6 @@ import spamwatch
 
 import telegram.ext as tg
 from telethon import TelegramClient
-from redis import StrictRedis
 
 StartTime = time.time()
 
@@ -88,7 +87,6 @@ if ENV:
     SUPPORT_CHAT = os.environ.get('SUPPORT_CHAT', None)
     SPAMWATCH_SUPPORT_CHAT = os.environ.get('SPAMWATCH_SUPPORT_CHAT', None)
     SPAMWATCH_API = os.environ.get('SPAMWATCH_API', None)
-    REDIS_URL = os.environ.get('REDIS_URL', None)
 
     try:
         BL_CHATS = set(int(x) for x in os.environ.get('BL_CHATS', "").split())
@@ -182,14 +180,6 @@ DEV_USERS = list(DEV_USERS)
 WOLVES = list(WOLVES)
 DEMONS = list(DEMONS)
 TIGERS = list(TIGERS)
-
-REDIS = StrictRedis.from_url(REDIS_URL,decode_responses=True)
-try:
-    REDIS.ping()
-    LOGGER.info("Your redis server is now alive!")
-except BaseException:
-    raise Exception("Your redis server is not alive, please check again...")
-
 
 # Load at end to ensure all prev variables have been set
 from SaitamaRobot.modules.helper_funcs.handlers import (CustomCommandHandler,
