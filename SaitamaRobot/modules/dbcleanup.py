@@ -100,7 +100,7 @@ def dbcleanup(update: Update, context: CallbackContext):
     reply = f"Total invalid chats - {invalid_chat_count}\n"
     reply += f"Total invalid gbanned users - {invalid_gban_count}"
 
-    buttons = [[InlineKeyboardButton("Cleanup DB", callback_data="db_cleanup")]]
+    buttons = [[InlineKeyboardButton("Cleanup DB ✅", callback_data="db_cleanup")]]
 
     update.effective_message.reply_text(
         reply, reply_markup=InlineKeyboardMarkup(buttons))
@@ -132,7 +132,7 @@ def callback_button(update: Update, context: CallbackContext):
                                 message.message_id)
             invalid_chat_count = get_invalid_chats(update, context, True)
             invalid_gban_count = get_invalid_gban(update, context, True)
-            reply = "Cleaned up {} chats and {} gbanned users from db.".format(
+            reply = "✅✅Cleaned up {} chats and {} gbanned users from db.✅✅".format(
                 invalid_chat_count, invalid_gban_count)
             bot.sendMessage(chat_id, reply)
         else:
