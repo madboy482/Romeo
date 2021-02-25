@@ -74,15 +74,15 @@ def ping(update: Update, context: CallbackContext):
     msg = update.effective_message
 
     start_time = time.time()
-    message = msg.reply_text("**__☞ Pong!!__**")
+    message = msg.reply_text("<b><i>☞ Pong!!</i></b>")
     end_time = time.time()
     telegram_ping = str(round((end_time - start_time) * 1000, 3)) + " ms"
     uptime = get_readable_time((time.time() - StartTime))
 
     message.edit_text(
-        "**☞ Pong!!**\n"
-        "**➥ Time Taken:** <code>{}</code>\n"
-        "**➥ Service uptime:** <code>{}</code>".format(telegram_ping, uptime),
+        "<b><i>☞ Pong!!</i></b>\n"
+        "<b>➥ Time Taken:</b> <code>{}</code>\n"
+        "<b>➥ Service uptime:</b> <code>{}</code>".format(telegram_ping, uptime),
         parse_mode=ParseMode.HTML)
 
 
