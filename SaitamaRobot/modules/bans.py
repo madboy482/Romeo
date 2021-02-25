@@ -180,7 +180,7 @@ def temp_ban(update: Update, context: CallbackContext) -> str:
         # bot.send_sticker(chat.id, BAN_STICKER)  # banhammer marie sticker
         bot.sendMessage(
             chat.id,
-            f"Yeah, Banned! User {mention_html(member.user.id, html.escape(member.user.first_name))}"
+            f"Yeah, Banned!✅\nUser {mention_html(member.user.id, html.escape(member.user.first_name))}"
             f"will be banned for {time_val}.",
             parse_mode=ParseMode.HTML)
         return log
@@ -189,7 +189,7 @@ def temp_ban(update: Update, context: CallbackContext) -> str:
         if excp.message == "Reply message not found...":
             # Do not reply
             message.reply_text(
-                f"<b>Yeah, Banned {mention_html(member.user.id, html.escape(member.user.first_name))!\nUser will be banned for {time_val}.", quote=False)
+                f"<b>Yeah, Banned!!✅\nUser will be banned for {time_val}.", quote=False)
             return log
         else:
             LOGGER.warning(update)
@@ -241,7 +241,7 @@ def kick(update: Update, context: CallbackContext) -> str:
         # bot.send_sticker(chat.id, BAN_STICKER)  # banhammer marie sticker
         bot.sendMessage(
             chat.id,
-            f"<b>Yeah, Kicked!</b> {mention_html(member.user.id, html.escape(member.user.first_name))}.",
+            f"<b>Yeah, Kicked!!</b> {mention_html(member.user.id, html.escape(member.user.first_name))}.✅",
             parse_mode=ParseMode.HTML)
         log = (
             f"<b>{html.escape(chat.title)}:</b>\n"
