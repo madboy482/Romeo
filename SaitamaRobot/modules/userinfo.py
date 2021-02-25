@@ -176,7 +176,7 @@ async def group_info(event) -> None:
     msg += f"\n➥ **Scam**: `{entity.scam}`"
     msg += f"\n➥ **Slowmode**: `{entity.slowmode_enabled}`"
     if entity.username:
-        msg += f"\n➥ **Username**: {entity.username}"
+        msg += f"\n➥ **Username**: @{entity.username}"
     msg += "\n\n➥ **Member Stats:**"
     msg += f"\n➥ __Admins__: `{len(totallist)}`"
     msg += f"\n➥ __Users__: `{totallist.total}`"
