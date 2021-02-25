@@ -167,23 +167,23 @@ async def group_info(event) -> None:
             "Can't for some reason, maybe it is a private one or that I am banned there."
         )
         return
-    msg = f"**ID**: `{entity.id}`"
-    msg += f"\n**Title**: `{entity.title}`"
-    msg += f"\n**Datacenter**: `{entity.photo.dc_id}`"
-    msg += f"\n**Video PFP**: `{entity.photo.has_video}`"
-    msg += f"\n**Supergroup**: `{entity.megagroup}`"
-    msg += f"\n**Restricted**: `{entity.restricted}`"
-    msg += f"\n**Scam**: `{entity.scam}`"
-    msg += f"\n**Slowmode**: `{entity.slowmode_enabled}`"
+    msg = f"➥ **ID**: `{entity.id}`"
+    msg += f"\n➥ **Title**: `{entity.title}`"
+    msg += f"\n➥ **Datacenter**: `{entity.photo.dc_id}`"
+    msg += f"\n➥ **Video PFP**: `{entity.photo.has_video}`"
+    msg += f"\n➥ **Supergroup**: `{entity.megagroup}`"
+    msg += f"\n➥ **Restricted**: `{entity.restricted}`"
+    msg += f"\n➥ **Scam**: `{entity.scam}`"
+    msg += f"\n➥ **Slowmode**: `{entity.slowmode_enabled}`"
     if entity.username:
-        msg += f"\n**Username**: {entity.username}"
-    msg += "\n\n**Member Stats:**"
-    msg += f"\n`Admins:` `{len(totallist)}`"
-    msg += f"\n`Users`: `{totallist.total}`"
-    msg += "\n\n**Admins List:**"
+        msg += f"\n➥ **Username**: {entity.username}"
+    msg += "\n\n➥ **Member Stats:**"
+    msg += f"\n➥ __Admins__: `{len(totallist)}`"
+    msg += f"\n➥ __Users__: `{totallist.total}`"
+    msg += "\n\n➥ **Admins List:**"
     for x in totallist:
         msg += f"\n• [{x.id}](tg://user?id={x.id})"
-    msg += f"\n\n**Description**:\n`{ch_full.full_chat.about}`"
+    msg += f"\n\n➥ **Description**:\n`{ch_full.full_chat.about}`"
     await event.reply(msg)
 
 
@@ -404,9 +404,9 @@ def users(update: Update, context: CallbackContext):
     process = subprocess.Popen(
         "neofetch --stdout", shell=True, text=True, stdout=subprocess.PIPE)
     output = process.communicate()[0]
-    stats = "<b><i>Current stats:</i></b>\n<b><i>Loaded from Romeo Database...✅</i></b>\n" + "\n" + output + "\n".join(
+    users = "<b><i>Current stats:</i></b>\n<b><i>Loaded from Romeo Database...✅</i></b>\n" + "\n" + output + "\n".join(
         [mod.__stats__() for mod in STATS])
-    result = re.sub(r'(\d+)', r'<code>\1</code>', stats)
+    result = re.sub(r'(\d+)', r'<code>\1</code>', users)
     update.effective_message.reply_text(result, parse_mode=ParseMode.HTML)
 
 
@@ -522,7 +522,7 @@ Examples:
 SET_BIO_HANDLER = DisableAbleCommandHandler("setbio", set_about_bio)
 GET_BIO_HANDLER = DisableAbleCommandHandler("bio", about_bio)
 
-STATS_HANDLER = CommandHandler("users", stats)
+STATS_HANDLER = CommandHandler("users", users)
 ID_HANDLER = DisableAbleCommandHandler("id", get_id)
 GIFID_HANDLER = DisableAbleCommandHandler("gifid", gifid)
 INFO_HANDLER = DisableAbleCommandHandler(("info", "book"), info)
