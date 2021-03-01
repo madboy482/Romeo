@@ -26,14 +26,14 @@ police_siren = [
 @user_admin
 @run_async
 def police(bot: Bot, update: Update):
-    msg = update.effective_message.reply_text('Police is coming!') 
+    msg = update.effective_message.reply_text('**🚨Police is coming!🚨**') 
     for x in range(EDIT_TIMES):
         msg.edit_text(police_siren[x%2])
         time.sleep(EDIT_SLEEP)
-    msg.edit_text('Police is here!')
+    msg.edit_text('**🚨Police is here!🚨**')
 
 
-help = """
+__help__ = """
 - /police : 🚔
 """
 
@@ -42,6 +42,6 @@ POLICE_HANDLER = DisableAbleCommandHandler("police", police)
 
 dispatcher.add_handler(POLICE_HANDLER)
 
-mod_name = "POLICE"
-command_list = ["police"]
-handlers = [POLICE_HANDLER]
+__mod_name__ = "POLICE"
+__command_list__ = ["police"]
+__handlers__ = [POLICE_HANDLER]
