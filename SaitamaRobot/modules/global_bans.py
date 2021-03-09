@@ -154,17 +154,17 @@ def gban(update: Update, context: CallbackContext):
 
     log_message = (
         f"#GBANNED\n"
-        f"<b>Originated from:</b> <code>{chat_origin}</code>\n"
-        f"<b>Admin:</b> {mention_html(user.id, user.first_name)}\n"
-        f"<b>Banned User:</b> {mention_html(user_chat.id, user_chat.first_name)}\n"
-        f"<b>Banned User ID:</b> <code>{user_chat.id}</code>\n"
-        f"<b>Event Stamp:</b> <code>{current_time}</code>")
+        f"➥ <b>Originated from:</b> <code>{chat_origin}</code>\n"
+        f"➥ <b>Admin:</b> {mention_html(user.id, user.first_name)}\n"
+        f"➥ <b>Banned User:</b> {mention_html(user_chat.id, user_chat.first_name)}\n"
+        f"➥ <b>Banned User ID:</b> <code>{user_chat.id}</code>\n"
+        f"➥ <b>Event Stamp:</b> <code>{current_time}</code>")
 
     if reason:
         if chat.type == chat.SUPERGROUP and chat.username:
-            log_message += f"\n<b>Reason:</b> <a href=\"https://telegram.me/{chat.username}/{message.message_id}\">{reason}</a>"
+            log_message += f"\n➥ <b>Reason:</b> <a href=\"https://telegram.me/{chat.username}/{message.message_id}\">{reason}</a>"
         else:
-            log_message += f"\n<b>Reason:</b> <code>{reason}</code>"
+            log_message += f"\n➥ <b>Reason:</b> <code>{reason}</code>"
 
     if EVENT_LOGS:
         try:
@@ -237,8 +237,8 @@ def gban(update: Update, context: CallbackContext):
         bot.send_message(
             user_id, "#EVENT"
             "You have been marked as Malicious and as such have been banned from any future groups we manage."
-            f"\n<b>Reason:</b> <code>{html.escape(user.reason)}</code>"
-            f"</b>Appeal Chat:</b> @{SUPPORT_CHAT}",
+            f"\n➥ <b>Reason:</b> <code>{html.escape(user.reason)}</code>"
+            f"➥ <b>Appeal Chat:</b> @{SUPPORT_CHAT}",
             parse_mode=ParseMode.HTML)
     except:
         pass  # bot probably blocked by user
@@ -284,11 +284,11 @@ def ungban(update: Update, context: CallbackContext):
 
     log_message = (
         f"#UNGBANNED\n"
-        f"<b>Originated from:</b> <code>{chat_origin}</code>\n"
-        f"<b>Admin:</b> {mention_html(user.id, user.first_name)}\n"
-        f"<b>Unbanned User:</b> {mention_html(user_chat.id, user_chat.first_name)}\n"
-        f"<b>Unbanned User ID:</b> <code>{user_chat.id}</code>\n"
-        f"<b>Event Stamp:</b> <code>{current_time}</code>")
+        f"➥ <b>Originated from:</b> <code>{chat_origin}</code>\n"
+        f"➥ <b>Admin:</b> {mention_html(user.id, user.first_name)}\n"
+        f"➥ <b>Unbanned User:</b> {mention_html(user_chat.id, user_chat.first_name)}\n"
+        f"➥ <b>Unbanned User ID:</b> <code>{user_chat.id}</code>\n"
+        f"➥ <b>Event Stamp:</b> <code>{current_time}</code>")
 
     if EVENT_LOGS:
         try:
@@ -392,10 +392,10 @@ def check_and_ban(update, user_id, should_message=True):
         if should_message:
             update.effective_message.reply_text(
                 f"<b>Alert</b>: Acc. to my lists of g-banned users, this user is globally banned!!\n"
-                f"<code>*Bans them from here...*</code>.\n"
-                f"<b>Appeal chat</b>: {SPAMWATCH_SUPPORT_CHAT}\n"
-                f"<b>User ID</b>: <code>{sw_ban.id}</code>\n"
-                f"<b>Ban Reason</b>: <code>{html.escape(sw_ban.reason)}</code>",
+                f"<code>*Bans them from here, without expiry date...*</code>.\n"
+                f"➥ <b>Appeal chat</b>: {SPAMWATCH_SUPPORT_CHAT}\n"
+                f"➥ <b>User ID</b>: <code>{sw_ban.id}</code>\n"
+                f"➥ <b>Ban Reason</b>: <code>{html.escape(sw_ban.reason)}</code>",
                 parse_mode=ParseMode.HTML)
         return
 
@@ -403,9 +403,9 @@ def check_and_ban(update, user_id, should_message=True):
         update.effective_chat.kick_member(user_id)
         if should_message:
             text = f"<b>Alert</b>: Acc. to my lists of g-banned users, this user is globally banned!!\n" \
-                   f"<code>*Bans them from here*</code>.\n" \
-                   f"<b>Appeal chat</b>: @{SUPPORT_CHAT}\n" \
-                   f"<b>User ID</b>: <code>{user_id}</code>"
+                   f"<code>*Bans them from here, without expiry date...*</code>.\n" \
+                   f"➥ <b>Appeal chat</b>: @{SUPPORT_CHAT}\n" \
+                   f"➥ <b>User ID</b>: <code>{user_id}</code>"
             user = sql.get_gbanned_user(user_id)
             if user.reason:
                 text += f"\n<b>Ban Reason:</b> <code>{html.escape(user.reason)}</code>"
@@ -481,8 +481,8 @@ def __user_info__(user_id):
         text = text.format("Yes")
         user = sql.get_gbanned_user(user_id)
         if user.reason:
-            text += f"\n<b>Reason:</b> <code>{html.escape(user.reason)}</code>"
-        text += f"\n<b>Appeal Chat:</b> @{SUPPORT_CHAT}"
+            text += f"\n➥ <b>Reason:</b> <code>{html.escape(user.reason)}</code>"
+        text += f"\n➥ <b>Appeal Chat:</b> @{SUPPORT_CHAT}"
     else:
         text = text.format("???")
     return text
