@@ -215,7 +215,7 @@ def gban(update: Update, context: CallbackContext):
     if EVENT_LOGS:
         log.edit_text(
             log_message +
-            f"\n<b>Chats affected:</b> <code>{gbanned_chats}</code>",
+            f"\n➥ <b>Chats affected:</b> <code>{gbanned_chats}</code>",
             parse_mode=ParseMode.HTML)
     else:
         send_to_list(
@@ -338,7 +338,7 @@ def ungban(update: Update, context: CallbackContext):
 
     if EVENT_LOGS:
         log.edit_text(
-            log_message + f"\n<b>Chats affected:</b> {ungbanned_chats}",
+            log_message + f"\n➥ <b>Chats affected:</b> {ungbanned_chats}",
             parse_mode=ParseMode.HTML)
     else:
         send_to_list(bot, DRAGONS + DEMONS, "un-gban complete!")
@@ -408,7 +408,7 @@ def check_and_ban(update, user_id, should_message=True):
                    f"➥ <b>User ID</b>: <code>{user_id}</code>"
             user = sql.get_gbanned_user(user_id)
             if user.reason:
-                text += f"\n<b>Ban Reason:</b> <code>{html.escape(user.reason)}</code>"
+                text += f"\n➥ <b>Ban Reason:</b> <code>{html.escape(user.reason)}</code>"
             update.effective_message.reply_text(text, parse_mode=ParseMode.HTML)
 
 
