@@ -1,23 +1,17 @@
-![Romeo](https://telegra.ph/file/929a3cffe8935f0a445e6.jpg)
+![Romeo](https://telegra.ph/file/f96a2b34ddecce4ad1417.jpg)
 
 # Romeo
 
-[![Updates channel!](https://img.shields.io/badge/Join%20Channel-!-red)](https://telegram.me/Romeo1Bot_Support)
+[![Updates channel!](https://img.shields.io/badge/Join%20Channel-!-red)](https://t.me/Romeo_JulietBotSupport)
 
 
-A modular Telegram Python bot running on python3 with a sqlalchemy database and an entirely themed persona to make Saitama suitable for Anime and Manga group chats. 
+A modular Telegram Python bot running on python3 with a sqlalchemy database and an entirely themed persona to make Romeo suitable for moderating groups...
 
 Can be found on telegram as [Romeo](https://telegram.me/Romeo1Bot).
 
-The Support group can be reached out to at [Romeo Bot Support](https://telegram.me/Romeo1Bot_Support), where you can ask for help about [Romeo](https://telegram.me/Romeo1Bot), discover/request new features, report bugs, and stay in the loop whenever a new update is available. 
+The Support group can be reached out to at [Romeo Bot Support](https://t.me/Romeo_JulietBotSupport), where you can ask for help about [Romeo](https://telegram.me/Romeo1Bot), discover/request new features, report bugs, and stay in the loop whenever a new update is available. 
 
 ## How to setup/deploy.
-
-### Read these notes carefully before proceeding 
- - Edit any mentions of @OnePunchSupport to your own support chat
- - Your code must be open source and a link to your fork's repository must be there in the start reply of the bot [See this](https://github.com/madboy482/Romeo/blob/shiken/SaitamaRobot/__main__.py#L25)
- - Lastly, if you are found to run this repo without the code being open sourced or the repository link not mentioned in the bot, we will push a gban for you in our network because of being in violation of the license, you are free to be a dick and not respect the open source code (we do not mind) but we will not be having you around our chats
- - This repo does not come with technical support, so DO NOT come to us asking help about deploy/console errors
 
 <details>
   <summary>Steps to deploy on Heroku !! </summary>
@@ -77,15 +71,16 @@ For starters click on this button
 [![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/madboy482/Romeo.git) 
 
 
-## Credits
+# Credits 📍
 The bot is based on the original work done by <b>[PaulSonOfLars](https://github.com/PaulSonOfLars)</b>
 All original credits go to Paul and his dedication, Without his efforts, this fork would not have been possible!
 
-<b>Fork Developer --></b> <b><i>[MADBOY](https://github.com/madboy482)</i></b>
-or <b><i>[MADBOY](https://telegram.me/Warning_MadBoy_is_Here)</i></b>
+## ➥ <b>FORK DEVELOPER</b> » <a href="https://github.com/madboy482" alt="MadBoy"> <img src="https://img.shields.io/badge/MADBOY-30302f?logo=github" /></a> or <a href="https://telegram.me/Warning_MadBoy_is_Here" alt="MadBoy"> <img src="https://img.shields.io/badge/MADBOY-dcdcdc?logo=telegram" /></a>
+
+## ➥ <b>DEV</b> » <a href="https://telegram.me/Wanacoins" alt="Pranav"> <img src="https://img.shields.io/badge/PRANAV-adff2f?logo=telegram" /></a>
 
 Also, missing proper credit for blacklistusers taken from TheRealPhoenixBot (will add it later, this note says unless it is done)
 
 Any other authorship/credits can be seen through the commits.
 
-Should any be missing kindly let us know at [Romeo Bot Support](https://telegram.me/Romeo1Bot_Support) or simply submit a pull request on the readme.
+Should any be missing kindly let us know at [Romeo Bot Support](https://t.me/Romeo_JulietBotSupport) or simply submit a pull request on the readme.
