@@ -1,20 +1,58 @@
-![Romeo](https://telegra.ph/file/f96a2b34ddecce4ad1417.jpg)
+# # Romeo # (Romeov1) # (MadBoy)
+## An exclusive Group Moderator Bot.... 
+### Can be found as @Romeo1Bot on Telegram, or [ROMEO](https://telegram.me/Romeo1Bot).
 
-# Romeo
+<p align="center">
+  <img src="https://telegra.ph/file/f96a2b34ddecce4ad1417.jpg">
+</p>
 
-[![Updates channel!](https://img.shields.io/badge/Join%20Channel-!-red)](https://t.me/Romeo_JulietBotSupport)
+# Romeov3
 
+<p align="center">
+- x -|│  “	Superb Group Moderator... ”  │| - x -
+</p>
 
-A modular Telegram Python bot running on python3 with a sqlalchemy database and an entirely themed persona to make Romeo suitable for moderating groups...
+<<p align="center">
+<a href="https://app.codacy.com/gh/madboy482/Romeo?utm_source=github.com&utm_medium=referral&utm_content=madboy482/Romeo&utm_campaign=Badge_Grade_Settings" alt="Codacy Badge">
+<img src="https://api.codacy.com/project/badge/Grade/6141417ceaf84545bab6bd671503df51" /> </a>
+<a href="https://github.com/madboy482/MadBoi" alt="Libraries.io dependency status for GitHub repo"> <img src="https://img.shields.io/librariesio/github/madboy482/MadBoi" /> </a>
+<a href="http://hits.dwyl.com/madboy482/MadBoi" alt="HitCount"> <img src="http://hits.dwyl.com/madboy482/MadBoi.svg" /> </a>
+</p>
+<p align="center">
+<a href="https://github.com/madboy482/MadBoi" alt="GitHub closed issues"> <img src="https://img.shields.io/github/issues-closed-raw/madboy482/MadBoi?style=flat&logo=github&color=success" /> </a>
+<a href="https://github.com/madboy482/MadBoi" alt="GitHub commit activity"> <img src="https://img.shields.io/github/commit-activity/m/madboy482/MadBoi" /> </a>
+<a href="https://github.com/madboy482/MadBoi/network/members" alt="GitHub forks"> <img src="https://img.shields.io/github/forks/madboy482/MadBoi?label=Forks&logo=github" /> </a>
+<a href="https://github.com/madboy482/MadBoi" alt="GitHub closed pull requests"> <img src="https://img.shields.io/github/issues-pr-closed-raw/madboy482/MadBoi?color=success" /> </a>
+<a href="https://github.com/madboy482/MadBoi" alt="GitHub issues"> <img src="https://img.shields.io/github/issues-raw/madboy482/MadBoi?style=flat&logo=github&color=yellow" /> </a>
+</p>
+<p align="center">
+<a href="https://github.com/madboy482/MadBoi" alt="GitHub release (latest by date including pre-releases)"> <img src="https://img.shields.io/github/v/release/madboy482/MadBoi?include_prereleases?style=flat&logo=github" /> </a>
+<a href="https://www.python.org/" alt="made-with-python"> <img src="https://img.shields.io/badge/Made%20with-Python-1f425f.svg?style=flat&logo=python&color=blue" /> </a>
+<a href="https://github.com/madboy482/MadBoi" alt="Docker!"> <img src="https://aleen42.github.io/badges/src/docker.svg" /> </a>
+<a href="https://github.com/madboy482/MadBoi" alt="GitHub repo size"> <img src="https://img.shields.io/github/repo-size/madboy482/MadBoi" /> </a>
+<a href="https://github.com/madboy482/MadBoi/blob/master/LICENSE" alt="GPLv3 license"> <img src="https://img.shields.io/badge/License-GPLv3-blue.svg" /> </a>
+</p>
+<p align="center">
+<a href="https://telegram.me/Romeo_JulietBotSupport" alt="Telegram!"> <img src="https://aleen42.github.io/badges/src/telegram.svg" /> </a>
+<a href="https://github.com/madboy482/MadBoi/graphs/commit-activity" alt="Maintenance"> <img src="https://img.shields.io/badge/Maintained%3F-yes-green.svg" /> </a>
+<a href="https://makeapullrequest.com" alt="PRs Welcome"> <img src="https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=flat-square" /> </a>
+</p>
+  
+## ROMEO-3.0 IS A SUPERB GROUP MODERATOR BOT FOR TELEGRAM GROUPS, IT HELPS ADMINS/OWNERS TO MANAGE THEIR GROUPS EASILY.....
+### - NOW WITH FORCE-SUBSCRIBE CODE ✅
+### - INLINE ALIVE ✅
+### - PLUGIN INSTALLER AND UPDATER (Tho for DEVs only...) ✅
+### - INLINE YOUTUBE SEARCH ✅
 
-Can be found on telegram as [Romeo](https://telegram.me/Romeo1Bot).
+# ABOUT
 
-The Support group can be reached out to at [Romeo Bot Support](https://t.me/Romeo_JulietBotSupport), where you can ask for help about [Romeo](https://telegram.me/Romeo1Bot), discover/request new features, report bugs, and stay in the loop whenever a new update is available. 
+* Bot Link:  <a href="https://telegram.me/Romeov3Bot" alt="Romeo-3.0"> <img src="https://img.shields.io/badge/%F0%9F%A4%96%20-ROMEOv3-blue" /> </a>
+* Updates channel: <a  href="https://telegram.me/Romeo_JulietBotSupport" alt="Romeo_JulietBotSupport"> <img  src="https://img.shields.io/badge/%F0%9F%92%A1-ROMEOv3%20Bot%20Support-9cf" /> </a>
 
-## How to setup/deploy.
+* Should you be forking this repo then do not forget to star it - <img alt="GitHub Repo stars" src="https://img.shields.io/github/stars/madboy482/MadBoi?color=white&label=%F0%9F%8C%9F%20star">
 
 <details>
-  <summary>Steps to deploy on Heroku !! </summary>
+  <summary># Steps to deploy on Heroku!! </summary>
 
 ```
 Fill in all the details, Deploy!
@@ -23,13 +61,16 @@ REMEMBER: Turn on worker dyno (Don't worry It's free :D) & Webhook
 Now send the bot /start, If it doesn't respond go to https://dashboard.heroku.com/apps/(app-name)/settings and remove webhook and port.
 ```
 
-  [![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/madboy482/Romeo.git)
+  [![Deploy Here](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/madboy482/MadBoi.git)
 
 </details>  
-<details>
-  <summary>Steps to self Host!! </summary>
 
-  ## Setting up the bot (Read this before trying to use!):
+
+
+<details>
+  <summary># Steps to self Host!! </summary>
+
+  ## Setting up the Bot (Read this before trying to use!):
 Please make sure to use python3.6, as I cannot guarantee everything will work as expected on older Python versions!
 This is because markdown parsing is done by iterating through a dict, which is ordered by default in 3.6.
 
@@ -38,16 +79,16 @@ This is because markdown parsing is done by iterating through a dict, which is o
 There are two possible ways of configuring your bot: a config.py file, or ENV variables.
 
 The preferred version is to use a `config.py` file, as it makes it easier to see all your settings grouped together.
-This file should be placed in your `SaitamaRobot` folder, alongside the `__main__.py` file. 
+This file should be placed in your `MadBoi` folder, alongside the `__main__.py` file. 
 This is where your bot token will be loaded from, as well as your database URI (if you're using a database), and most of
 your other settings.
 
 It is recommended to import sample_config and extend the Config class, as this will ensure your config contains all
 defaults set in the sample_config, hence making it easier to upgrade.
 
-An example `config.py` file could be:
+An example for `config.py` file could be:
 ```
-from SaitamaRobot.sample_config import Config
+from MadBoi.sample_config import Config
 
 class Development(Config):
     OWNER_ID = 1078841825  # your telegram ID
@@ -61,27 +102,22 @@ class Development(Config):
     NO_LOAD = ['translation']
 ```
 
-If you can't have a config.py file (EG on Heroku), it is also possible to use environment variables.
-So just go and read the config sample file.
+If you can't have a config.py file (Ex - on Heroku), it is also possible to use environment variables.
+So just go and read the config sample file. 
 </details>
 
 
-## How to setup on Heroku 
-For starters click on this button 
-
-[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/madboy482/Romeo.git) 
+## Setup on Heroku 
+[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/madboy482/MadBoi.git) 
 
 
 # Credits 📍
-The bot is based on the original work done by <b>[PaulSonOfLars](https://github.com/PaulSonOfLars)</b>
-All original credits go to Paul and his dedication, Without his efforts, this fork would not have been possible!
-
-## ➥ <b>FORK DEVELOPER</b> » <a href="https://github.com/madboy482" alt="MadBoy"> <img src="https://img.shields.io/badge/MADBOY-30302f?logo=github" /></a> or <a href="https://telegram.me/Warning_MadBoy_is_Here" alt="MadBoy"> <img src="https://img.shields.io/badge/MADBOY-dcdcdc?logo=telegram" /></a>
+## ➥ <b>OWNER</b> » <a href="https://github.com/madboy482" alt="MadBoy"> <img src="https://img.shields.io/badge/MADBOY-30302f?logo=github" /></a> or <a href="https://telegram.me/Warning_MadBoy_is_Here" alt="MadBoy"> <img src="https://img.shields.io/badge/MADBOY-dcdcdc?logo=telegram" /></a>
 
 ## ➥ <b>DEV</b> » <a href="https://telegram.me/Wanacoins" alt="Pranav"> <img src="https://img.shields.io/badge/PRANAV-adff2f?logo=telegram" /></a>
 
-Also, missing proper credit for blacklistusers taken from TheRealPhoenixBot (will add it later, this note says unless it is done)
-
-Any other authorship/credits can be seen through the commits.
-
-Should any be missing kindly let us know at [Romeo Bot Support](https://t.me/Romeo_JulietBotSupport) or simply submit a pull request on the readme.
+<details>
+<summary><b>SPECIAL THANKS TO</b></summary>
+<h1> <a href="https://telegram.me/LEGENDX22">LEGEND X</a></h1><br>
+<h1><a href="https://telegram.me/PROBOYX">PROBOY X</a></h1>
+</details>
