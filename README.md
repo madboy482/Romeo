@@ -62,7 +62,8 @@ class Development(Config):
 ```
 
 If you can't have a config.py file (EG on Heroku), it is also possible to use environment variables.
-So just go and read the config sample file. 
+So just go and read the config sample file.
+</details>
 
 
 ## How to setup on Heroku 
